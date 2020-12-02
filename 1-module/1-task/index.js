@@ -4,18 +4,11 @@
  * @returns {number}
  */
 function factorial(n) {
- 
-  for (let n = 0; n < 6; n++) {
-    
-    if (n / 2 != 0 && n % 2 == 0) continue;
-    alert(n);
-  }
-
-  let result = n;
-  for(let i = n - 1; i >= 1; --i) {
-    result *= i;
-  }
-
+  let result = 1;
+  
+  for(i = 0; n > i; i++) {
+    result *= n-i;
+  };
   return result;
-
+  
 }
